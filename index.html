@@ -35,9 +35,12 @@
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+
+  <body class="d-flex flex-column min-vh-100 text-center text-white bg-dark">
+
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  <div class="cover-container d-flex w-100 p-3 mx-auto flex-column" style="max-width: 960px; flex-grow: 1;">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">Cover</h3>
@@ -57,12 +60,14 @@
     </p>
   </main>
 
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
 </div>
 
+<div id="footer-placeholder"></div>
 
-    
+  <script src="footer.js"></script>
+  <script>
+    loadFooter('footer-placeholder');
+  </script>
+
   </body>
 </html>
