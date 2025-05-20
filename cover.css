@@ -51,3 +51,46 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+.footer{
+  width:100%;
+  padding:0.4rem 1.2rem;          /* compact bar height */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;   /* even gaps */
+  gap:1.5rem;                      /* keeps items apart */
+  border-top:1px solid #555;
+  flex-wrap:nowrap;                /* everything on one row */
+  font-size:0.9rem;                /* matches screenshot */
+  line-height:1.35;
+}
+
+/* common tweaks for every column */
+.footer-item{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;                   /* keep from shrinking too small */
+  white-space:nowrap;              /* prevent line breaks */
+}
+
+/* icons sit nicely in front of text */
+.footer-item svg{
+  margin-right:0.45rem;
+  flex:0 0 18px;                   /* lock width so labels align */
+}
+
+/* let address wrap to two lines but keep icon inline */
+.address{
+  white-space:normal;              /* only address may wrap */
+  max-width:340px;                 /* prevent it taking the whole row */
+}
+
+/* QR code always fixed width, pushes to far‑right */
+.qr img{
+  width:60px;
+  height:60px;
+  object-fit:contain;
+  background:#fff;      /* makes transparent areas white */
+  padding:4px;          /* thin margin so it doesn’t touch the bar edges */
+  border-radius:4px;    /* optional: softer look */
+}
