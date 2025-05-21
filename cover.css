@@ -22,8 +22,9 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 100%;
 }
+
 
 
 /*
@@ -52,45 +53,200 @@ body {
   border-bottom-color: #fff;
 }
 
-.footer{
-  width:100%;
-  padding:0.4rem 1.2rem;          /* compact bar height */
-  display:flex;
-  align-items:center;
-  justify-content:space-between;   /* even gaps */
-  gap:1.5rem;                      /* keeps items apart */
-  border-top:1px solid #555;
-  flex-wrap:nowrap;                /* everything on one row */
-  font-size:0.9rem;                /* matches screenshot */
-  line-height:1.35;
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #555;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  background-color: #001f3f;
 }
 
-/* common tweaks for every column */
-.footer-item{
-  display:flex;
-  align-items:center;
-  flex-shrink:0;                   /* keep from shrinking too small */
-  white-space:nowrap;              /* prevent line breaks */
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  color: white;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-/* icons sit nicely in front of text */
-.footer-item svg{
-  margin-right:0.45rem;
-  flex:0 0 18px;                   /* lock width so labels align */
+.footer-item svg {
+  margin-right: 0.45rem;
+  flex: 0 0 18px;
 }
 
-/* let address wrap to two lines but keep icon inline */
-.address{
-  white-space:normal;              /* only address may wrap */
-  max-width:340px;                 /* prevent it taking the whole row */
+.address {
+  max-width: 340px;
+  white-space: normal;
 }
 
-/* QR code always fixed width, pushes to far‑right */
-.qr img{
-  width:60px;
-  height:60px;
-  object-fit:contain;
-  background:#fff;      /* makes transparent areas white */
-  padding:4px;          /* thin margin so it doesn’t touch the bar edges */
-  border-radius:4px;    /* optional: softer look */
+
+
+html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+      }
+
+      .site-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .hero-section, .hero1-section {
+        background: url('cinqueterre.jpg') no-repeat center center;
+        background-size: cover; /* Ensures full responsiveness */
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        color: white;
+      }
+
+      .hero-text {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.3;
+        word-break: break-word;
+      }
+
+      @media (min-width: 768px) {
+        .hero-text {
+          font-size: 3rem;
+        }
+
+        .hero2-text {
+          font-size: 2.5rem;
+        }
+      }
+
+      header {
+        background-color: #001f3f;
+        padding: 1rem;
+      }
+
+      header h3,
+      .nav-link {
+        margin-left: 15px;
+        color: white !important;
+        text-decoration: none;
+      }
+
+      .nav-link.active {
+        border-bottom: 2px solid white;
+      }
+
+      footer {
+        background-color: #001f3f;
+        text-align: center;
+        color: white;
+        border-top: 4px solid white;
+      }
+
+      footer a {
+        padding: 1rem;
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
 }
+
+.about-section {
+    max-width: 1200px;
+    margin:  auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 8px 200px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 550px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;              /* use flexbox */
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    gap: 10px;                  /* space between icon and text */
+}
+
+.illustration video {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.card h3 img {
+    width: 42px;   /* or any size you want */
+    height: 42px;
+    vertical-align: middle; /* aligns image vertically with text */
+    margin-right: 8px;      /* spacing between image and text */
+    background: white;
+}
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+   

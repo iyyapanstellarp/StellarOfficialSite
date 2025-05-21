@@ -2,7 +2,8 @@
 
 function getFooter() {
   return `
-    <footer class="footer bg-dark text-white-50">
+    <footer class="footer bg-dark text-white">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap py-3">
       <div class="footer-item address">
         <p>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -52,7 +53,9 @@ function getFooter() {
       </div>
 
       <div class="footer-item qr">
-        <img src="images/qr_code_PNG33.png"  />
+       <img src="images/qr_code_PNG33.png" style="width: 40px; height: 40px; background: white;">
+
+       </div>
       </div>
     </footer>
   `;
