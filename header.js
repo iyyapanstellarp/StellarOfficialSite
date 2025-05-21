@@ -15,7 +15,7 @@ function getHeader() {
           <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
           <a class="nav-link text-white" aria-current="page" href="About.html">Features</a>
           <a class="nav-link text-white" aria-current="page" href="#">Service</a>
-          <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+          <a class="nav-link text-white" aria-current="page" href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
