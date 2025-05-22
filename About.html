@@ -13,76 +13,88 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="cover.css" rel="stylesheet"> <!-- Your custom styles -->
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    
+  
+  body {
+ margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+ background: url('images/background.png')  no-repeat center center fixed;
+  background-size: cover;
+  color: #2e3f75;
 
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-   
-   
-    
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+}
+ 
+
+  
+</style>
 </head>
 <body>
- <!-- ✅ Header -->
 
+  <!-- ✅ Header -->
   <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
     <div id="header-placeholder"></div>
   </div>
 
   <script src="header.js"></script>
-   <script>
-  loadHeader('header-placeholder');
+  <script>
+    loadHeader('header-placeholder');
   </script>
 
-    <section class="about-section">
-        <h2>ABOUT US</h2>
-        <p class="description">
-            We are a Startup company with various ideologies in crafting solutions for the digital world. 
-            We focus on localized people needing digital solutions to improve their daily lives. 
-            We serve energetic students with quality training to make them skillful personally.
-        </p>
-        
-        <div class="about-content">
-            <div class="cards">
-                <div class="card">
-                    <h3><img src="images/teamwork.png"> Teamwork</h3>
-                    <p>We have ability to work together as a team with Passion, Dedication and Responsibility.</p>
-                </div>
-                <div class="card">
-                    <h3><img src="images/technology.png"> Technology</h3>
-                    <p>We work on various technologies (Windows, web, mobile & cloud) to provide a better solution.</p>
-                </div>
-                <div class="card">
-                    <h3><img src="images/training.png"> Training</h3>
-                    <p>We provide skillful training with internal certifications, and we guide for external certifications.</p>
-                </div>
-            </div>
-            
-            <div class="illustration">
-                 <video autoplay muted loop playsinline width="80%">
-        <source src="images/paragraphved.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-            </div>
+  <!-- ✅ About Section -->
+  <section class="about-section">
+    <h2>ABOUT US</h2>
+    <p class="description">
+      We are a Startup company with various ideologies in crafting solutions for the digital world.
+      We focus on localized people needing digital solutions to improve their daily lives.
+      We serve energetic students with quality training to make them skillful personally.
+    </p>
+
+    <div class="about-content">
+      <div class="cards">
+        <div class="card">
+          <h3><img src="images/teamwork.png" alt="Teamwork"> Teamwork</h3>
+          <p>We have ability to work together as a team with Passion, Dedication and Responsibility.</p>
         </div>
-    </section>
+        <div class="card">
+          <h3><img src="images/technology.png" alt="Technology"> Technology</h3>
+          <p>We work on various technologies (Windows, web, mobile & cloud) to provide a better solution.</p>
+        </div>
+        <div class="card">
+          <h3><img src="images/training.png" alt="Training"> Training</h3>
+          <p>We provide skillful training with internal certifications, and we guide for external certifications.</p>
+        </div>
+      </div>
 
-    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+      <div class="illustration">
+        <video autoplay muted loop playsinline width="80%">
+          <source src="images/paragraphved.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
 
-<div id="footer-placeholder"></div>
+  <!-- ✅ Footer -->
+  <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <div id="footer-placeholder"></div>
+  </div>
 
   <script src="footer.js"></script>
   <script>
     loadFooter('footer-placeholder');
   </script>
-</div>
-</div>
-  
+
 </body>
 </html>
