@@ -2,25 +2,41 @@
 
 function getHeader() {
   return `
-    <header class="mb-auto bg-dark">
-      <div class="d-flex justify-content-between align-items-center p-3">
-        <!-- Logo + Title -->
-        <div class="d-flex align-items-center">
-          <img src="logo.png" alt="Stellar Technologies Logo" style="height: 50px; margin-right: 10px;">
-          <h3 class="mb-0 text-white site-title">Stellar Technologies</h3>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center flex-wrap" href="#" style="white-space: normal;">
+          <img src="logo.png" alt="Logo" style="height: 40px;" class="me-2">
+          <span class="site-title text-wrap" style="font-size: 1rem;">Stellar Technologies</span>
+        </a>
 
-        <!-- Navigation Menu -->
-        <nav class="nav nav-masthead">
-          <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link text-white" aria-current="page" href="About.html">Features</a>
-          <a class="nav-link text-white" aria-current="page" href="#">Service</a>
-          <a class="nav-link text-white" aria-current="page" href="contact.html">Contact</a>
-        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-end text-lg-start">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
   `;
 }
+
+
 
 function loadHeader(id) {
   const headerContainer = document.getElementById(id);
