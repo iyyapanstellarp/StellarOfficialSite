@@ -253,4 +253,31 @@ html, body {
    
 
 
-      
+  .service-title {
+      text-align: center;
+      margin-bottom: 20px ;
+      font-size: 28px;
+      font-weight: bold;
+      border: 2px solid #333;
+      padding:8px 40px;
+      display: inline-block;
+    }
+
+   
+    
+
+    .service-section h4 {
+      font-weight: bold;
+    }
+
+    .service-section img {
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .text-box {
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
