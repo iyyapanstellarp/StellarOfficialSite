@@ -18,13 +18,13 @@ function getHeader() {
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav text-end text-lg-start">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="About.html">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link" href="Service.html">Service</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -42,7 +42,19 @@ function loadHeader(id) {
   const headerContainer = document.getElementById(id);
   if (headerContainer) {
     headerContainer.innerHTML = getHeader();
+
+    // After header is loaded, highlight the active page
+    const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+    const navLinks = headerContainer.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href").toLowerCase();
+      if (href === currentPage || (href === "index.html" && currentPage === "")) {
+        link.classList.add("active");
+      }
+    });
   } else {
     console.error(`Element with id "${id}" not found.`);
   }
 }
+
