@@ -173,8 +173,9 @@ html, body {
     font-weight: bold;
     border: 2px solid #000;
     display: inline-block;
-    padding: 8px 200px;
+     padding: 8px 40px; 
     margin-bottom: 20px;
+    word-wrap: break-word;
 }
 
 .description {
@@ -250,3 +251,6 @@ html, body {
         }
       }
    
+
+
+      
