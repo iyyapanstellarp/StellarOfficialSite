@@ -60,7 +60,10 @@ body {
   font-size: 0.9rem;
   line-height: 1.35;
   background-color: #001f3f;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
+
 
 .footer-item {
   display: flex;
@@ -140,18 +143,7 @@ html, body {
         border-bottom: 2px solid white;
       }
 
-      footer {
-        background-color: #001f3f;
-        text-align: center;
-        color: white;
-        border-top: 4px solid white;
-      }
-
-      footer a {
-        padding: 1rem;
-        color: #ffffff;
-        text-decoration: underline;
-      }
+      
 
       body {
     font-family: Arial, sans-serif;
