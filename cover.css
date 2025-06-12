@@ -193,7 +193,8 @@ html, body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 40px;
-    max-width: 550px;
+     margin-top: 40px;
+    max-width: 750px;
     text-align: justify;
     margin-left: auto;
     margin-right: auto;
@@ -203,22 +204,22 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 110px;
     flex-wrap: wrap;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 300px;
+    gap: 40px;
+    max-width: 450px;
 }
 
 .card {
     background: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0px 5px 20px 14px rgb(0 0 0 / 76%);
+    box-shadow: -7px 10px 12px 1px rgb(0 0 0 / 76%);
     text-align: left;
 }
 
@@ -232,9 +233,8 @@ html, body {
 }
 .illustration1 video {
     max-width: 500px;
-     margin-left: 20px;
-    margin-top: 20px;
-    height: auto;
+    
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0px 5px 20px 14px rgb(0 0 0 / 76%);
 }

@@ -2,11 +2,11 @@
 
 function getHeader() {
   return `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(8 8 24 / 89%);">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center flex-wrap" href="#" style="white-space: normal;">
-          <img src="logo.png" alt="Logo" style="height: 40px;" class="me-2">
-          <span class="site-title text-wrap" style="font-size: 1rem;">Stellar Technologies</span>
+          <img src="logo.png" alt="Logo" style="height: 60px;" class="me-2">
+          <span class="site-title text-wrap" style="font-size: 2.2rem;">Stellar Technologies</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
